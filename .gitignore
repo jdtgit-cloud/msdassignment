@@ -1,0 +1,8 @@
+*/.mvn/wrapper/*
+*/.mvn/*
+*/mvnw
+*/mvnw.cmd
+*/target
+*/.classpath
+*/.project
+*/.settings/*
