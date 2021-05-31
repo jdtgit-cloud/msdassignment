@@ -14,6 +14,8 @@ import com.jagadeesh.usertreeservice.data.UserNest;
 import com.jagadeesh.usertreeservice.service.UserNotFoundException;
 import com.jagadeesh.usertreeservice.service.UserTreeService;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @RequestMapping("/tree")
 public class UserTreeController {
@@ -23,11 +25,14 @@ public class UserTreeController {
 	
 	@GetMapping("/fetch/{userId}")
 	@LogMethodParam
+	@ApiOperation(value = "Fetches the user details by userId",
+	response = UserDetails.class)
 	public UserDetails fetchUserDetails(@PathVariable int userId) throws UserNotFoundException {
 		return service.fetchUserDetails(userId);
 	}
 	
 	@GetMapping("/fetchall")
+	@ApiOperation(value = "Fetches the realationship among all the users")
 	public List<UserNest> fetchAll() {
 		return service.fetchUserNest();
 	}

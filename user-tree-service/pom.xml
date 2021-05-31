@@ -31,6 +31,23 @@
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
 		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-boot-starter</artifactId>
+		    <version>3.0.0</version>
+		</dependency>
+		<!-- http://localhost:8100/swagger-ui/   -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger-ui</artifactId>
+		    <version>3.0.0</version>
+		</dependency>
+		<!-- 
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
@@ -38,7 +55,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
 		</dependency>
-
+		 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
